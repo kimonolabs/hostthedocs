@@ -22,10 +22,10 @@ docfiles_link_root = None
 copyright = None
 
 # Title of the homepage.
-title = None
+title = "Kimono Labs Docs"
 
 # Message in jumbotron.
-welcome = None
+welcome = "Welcome to the Kimono Labs Docs page."
 # Message below jumbotron.
 # Supports HTML.
 intro = None
