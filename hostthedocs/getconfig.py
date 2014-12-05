@@ -38,7 +38,7 @@ To add your docs, see
 <a href="https://github.com/rgalanakis/hostthedocs#working-with-host-the-docs">these instructions</a>.""")
 
 host = get('host', '127.0.0.1')
-port = int(get('port', 5000))
+port = int(get('port', 80))
 debug = bool(get('debug', None))
 readonly = get('readonly', False)
 max_content_mb = float(get('max_content_mb', 8))
