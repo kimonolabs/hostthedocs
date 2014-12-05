@@ -11,5 +11,6 @@ setup(
     install_requires=[
         'Flask',
         'six',
+        'Flask-BasicAuth'
     ],
 )

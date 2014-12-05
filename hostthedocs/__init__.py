@@ -1,6 +1,7 @@
 import os
 
 from flask import abort, Flask, jsonify, redirect, render_template, request
+from flask.ext.basicauth import BasicAuth
 
 from .filekeeper import delete_files, insert_link_to_latest, parse_docfiles, unpack_project
 from . import getconfig
@@ -8,6 +9,10 @@ from . import getconfig
 app = Flask(__name__)
 
 app.config['MAX_CONTENT_LENGTH'] = getconfig.max_content_mb * 1024 * 1024
+app.config['BASIC_AUTH_USERNAME'] = 'kimono'
+app.config['BASIC_AUTH_PASSWORD'] = 'prrrok123'
+app.config['BASIC_AUTH_FORCE'] = True
+basic_auth = BasicAuth(app)
 
 
 @app.route('/hmfd', methods=['POST', 'DELETE'])
