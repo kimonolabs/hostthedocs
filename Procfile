@@ -1,2 +1,2 @@
-web:python runserver.py
+web: python runserver.py
 heroku ps:scale web=1
