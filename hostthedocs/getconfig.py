@@ -36,9 +36,8 @@ intro = get('intro', """
 Browse all available documentation below.
 To add your docs, see
 <a href="https://github.com/rgalanakis/hostthedocs#working-with-host-the-docs">these instructions</a>.""")
-host = '127.0.0.1'
-if 'PORT' in os.environ:
-    host = '0.0.0.0'
+
+host = '0.0.0.0'
 port = int(os.environ.get("PORT", 5000))
 debug = bool(get('debug', None))
 readonly = get('readonly', False)
